@@ -1,0 +1,14 @@
+package powershell.java.com;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Index extends PsCompiler {
+	@SuppressWarnings("unchecked")
+	public static void main(String[] args) throws IOException {
+		String command="(Get-SCVMHost)[1..3]";
+		String  test1 = Compiler(command);
+		System.out.println("Test in Json \n "+test1);
+		}
+}
